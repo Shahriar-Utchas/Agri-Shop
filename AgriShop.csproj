@@ -1,0 +1,307 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8BA9C8B2-50ED-4F69-B64A-A5E5B262CFFE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>AgriShop</RootNamespace>
+    <AssemblyName>AgriShop</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>AgriShop.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FontAwesome.Sharp, Version=6.3.0.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f, processorArchitecture=MSIL">
+      <HintPath>packages\FontAwesome.Sharp.6.3.0\lib\net472\FontAwesome.Sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutUs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutUs.Designer.cs">
+      <DependentUpon>AboutUs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddProducts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddProducts.Designer.cs">
+      <DependentUpon>AddProducts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminHome.Designer.cs">
+      <DependentUpon>AdminHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cart.Designer.cs">
+      <DependentUpon>Cart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class1.cs" />
+    <Compile Include="CusDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CusDashboard.Designer.cs">
+      <DependentUpon>CusDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomControls\DatePicker.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustomControls\myRadioButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustomControls\ToggleButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="customerDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="customerDetails.Designer.cs">
+      <DependentUpon>customerDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FarmarDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FarmarDetails.Designer.cs">
+      <DependentUpon>FarmarDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FarmarHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FarmarHome.Designer.cs">
+      <DependentUpon>FarmarHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ForgetPass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ForgetPass.Designer.cs">
+      <DependentUpon>ForgetPass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forgetPass2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forgetPass2.Designer.cs">
+      <DependentUpon>forgetPass2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forgetPass3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forgetPass3.Designer.cs">
+      <DependentUpon>forgetPass3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HomePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HomePage.Designer.cs">
+      <DependentUpon>HomePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="infoEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="infoEdit.Designer.cs">
+      <DependentUpon>infoEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="item.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="item.Designer.cs">
+      <DependentUpon>item.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginFrame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginFrame.Designer.cs">
+      <DependentUpon>LoginFrame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="orderDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="orderDetails.Designer.cs">
+      <DependentUpon>orderDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PassChng.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PassChng.Designer.cs">
+      <DependentUpon>PassChng.cs</DependentUpon>
+    </Compile>
+    <Compile Include="products.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="products.Designer.cs">
+      <DependentUpon>products.cs</DependentUpon>
+    </Compile>
+    <Compile Include="productsDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="productsDetails.Designer.cs">
+      <DependentUpon>productsDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Profile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Profile.Designer.cs">
+      <DependentUpon>Profile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegistrationFrame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistrationFrame.Designer.cs">
+      <DependentUpon>RegistrationFrame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AboutUs.resx">
+      <DependentUpon>AboutUs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddProducts.resx">
+      <DependentUpon>AddProducts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminHome.resx">
+      <DependentUpon>AdminHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cart.resx">
+      <DependentUpon>Cart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CusDashboard.resx">
+      <DependentUpon>CusDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="customerDetails.resx">
+      <DependentUpon>customerDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FarmarDetails.resx">
+      <DependentUpon>FarmarDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FarmarHome.resx">
+      <DependentUpon>FarmarHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ForgetPass.resx">
+      <DependentUpon>ForgetPass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forgetPass2.resx">
+      <DependentUpon>forgetPass2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forgetPass3.resx">
+      <DependentUpon>forgetPass3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HomePage.resx">
+      <DependentUpon>HomePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="infoEdit.resx">
+      <DependentUpon>infoEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="item.resx">
+      <DependentUpon>item.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginFrame.resx">
+      <DependentUpon>LoginFrame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="orderDetails.resx">
+      <DependentUpon>orderDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PassChng.resx">
+      <DependentUpon>PassChng.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="products.resx">
+      <DependentUpon>products.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="productsDetails.resx">
+      <DependentUpon>productsDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Profile.resx">
+      <DependentUpon>Profile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistrationFrame.resx">
+      <DependentUpon>RegistrationFrame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Exit.png" />
+    <None Include="Resources\hide.jpg" />
+    <None Include="Resources\Login_Button.png" />
+    <None Include="Resources\pass.png" />
+    <None Include="Resources\userid.png" />
+    <None Include="Resources\Previous.png" />
+    <None Include="Resources\profile.png" />
+    <None Include="Resources\show.jpg" />
+    <None Include="Resources\Signup.png" />
+    <Content Include="AgriShop.ico" />
+    <None Include="Resources\Logo.png" />
+    <None Include="Resources\calendarDark.png" />
+    <None Include="Resources\calendarWhite.png" />
+    <None Include="Resources\forgot_user.png" />
+    <None Include="Resources\forgot_user2.png" />
+    <None Include="Resources\forgot_user3.png" />
+    <None Include="Resources\admin.png" />
+    <Content Include="shop.ico" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
